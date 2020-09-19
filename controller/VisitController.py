@@ -99,7 +99,7 @@ class Collection(Resource):
 @visit_ns.doc(parser=id_parser)
 class Collection(Resource):
     def get(self, culturalobject_id):
-        '''Returns the number of 2D, 3D, off-line visits for the cultural object in the period from-to for every day interval'''
+        '''Returns the number of 2D, 3D, off-line visits for the cultural object in the period from-to for every day interval '''
         args = id_parser.parse_args()
         dtfrom = datetime.strptime(urllib.parse.unquote(args['datefrom']),"%Y-%m-%dT%H:%M:%S.%fZ")
         dtto = datetime.strptime(urllib.parse.unquote(args['dateto']),"%Y-%m-%dT%H:%M:%S.%fZ")
