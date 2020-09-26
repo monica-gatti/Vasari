@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# coding=utf-8
 from neomodel import (config, StructuredNode, StringProperty, IntegerProperty, FloatProperty,DateTimeProperty,DateTimeFormatProperty,
     UniqueIdProperty, RelationshipTo, StructuredRel, db, DoesNotExist, DeflateError)
 from datetime import datetime

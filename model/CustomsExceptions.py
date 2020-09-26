@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# coding=utf-8
 class ObjectNotFoundException(Exception):
     """Exception raised for errors in retrieving objects.
 

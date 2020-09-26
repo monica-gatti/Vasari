@@ -1,4 +1,4 @@
-from alpine:latest
+FROM alpine:latest
 RUN apk add --no-cache python3-dev
 RUN apk add py3-pip
 
@@ -8,8 +8,8 @@ COPY . /app
 
 RUN pip3 --no-cache-dir install -r requirements.txt
 
-EXPOSE 5000
+RUN apk --no-cache add curl
 
-ENTRYPOINT ["python3"]
+EXPOSE 5000
 
 CMD ["app.py"]

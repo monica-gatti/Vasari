@@ -1,9 +1,11 @@
+# !/usr/bin/python
+# coding=utf-8
 from flask import Flask, Blueprint,json, request
 from flask_restplus import Api, Namespace, Resource, fields, reqparse
 from datetime import datetime
 from model.CulturalCollection import *
 from model.CulturalSite import *
-from model.CulturalObject import CulturalObject
+from model.CulturalObject import *
 from view.CulturalSiteView import *
 from model.CustomsExceptions import *
 

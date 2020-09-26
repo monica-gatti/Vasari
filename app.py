@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# coding=utf-8
 from flask import Flask
 from flask_restplus import Api
 from controller.CulturalSiteController import culturalsite_bp

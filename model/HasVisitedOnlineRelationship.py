@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# coding=utf-8 
 from model.CulturalObject import CulturalObject
 from neomodel import (config, StructuredNode, StringProperty, FloatProperty, DateTimeFormatProperty,
     RelationshipTo, StructuredRel, db)

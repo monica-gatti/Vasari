@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 from model.CulturalObject import CulturalObject
 from model.IncludesRelationship import IncludesRelationship
 from neomodel import (config, StructuredNode, StringProperty, DateTimeFormatProperty,

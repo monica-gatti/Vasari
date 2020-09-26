@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# coding=utf-8 
 from neomodel import config
 config.NEO4J_USERNAME = 'neo4j'
 config.NEO4J_PASSWORD = 'neo4j'

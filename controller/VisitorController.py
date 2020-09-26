@@ -1,3 +1,5 @@
+# !/usr/bin/python
+# coding=utf-8 
 from flask import Flask, Blueprint, json, request
 from flask_restplus import Api, Namespace, Resource, fields
 from datetime import datetime
