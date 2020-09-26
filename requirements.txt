@@ -1,0 +1,9 @@
+Flask==1.1.1
+Flask-RESTful==0.3.8
+flask-restplus==0.13.0
+flask-swagger-ui==3.25.0
+neo4j-driver==1.7.2
+neobolt==1.7.17
+neomodel==3.3.2
+neotime==1.7.4
+
