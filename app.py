@@ -18,4 +18,9 @@ app.register_blueprint(culturalobject_bp)
 app.register_blueprint(visitor_bp)
 app.register_blueprint(visit_bp)
 
-app.run(debug=True)
+
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run(host = '0.0.0.0',port=5000)
+    #app.run(debug=True)

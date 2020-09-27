@@ -12,4 +12,4 @@ RUN apk --no-cache add curl
 
 EXPOSE 5000
 
-CMD ["app.py"]
+ENTRYPOINT python3 app.py
