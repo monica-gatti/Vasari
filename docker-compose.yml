@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+
+    database:
+        image: neo4j:3.5.20
+        ports:
+            - "7474:7474"
+            - "7687:7687" 
+        volumes:
+            - "$HOME/neo4j/logs:/logs"
+            - "$HOME/neo4j/import:/var/lib/neo4j/import"
+            - "$HOME/neo4j/plugins:/plugins"
+        environment:
+            - NEO4J_AUTH=none
+
+    web:
+        build: '.'
+        depends_on:
+            - "database"
+        image: vasari:flask
+        ports:
+            - "5002:5000"
+        environment:
+            - NEO4J_USERNAME=neo4j
+            - NEO4J_PASSWORD=test
+            - VASARI_ENV=container
